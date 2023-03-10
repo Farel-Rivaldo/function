@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    var tinggiSiswa1 = 170;
+        var tinggiSiswa2 = 165;
+        var tinggiSiswa3 = 180;
+
+        var tertinggi;
+
+        if (tinggiSiswa1 > tinggiSiswa2 && tinggiSiswa1 > tinggiSiswa3) {
+            tertinggi = tinggiSiswa1;
+        } else if (tinggiSiswa2 > tinggiSiswa3) {
+            tertinggi = tinggiSiswa2;
+        } else {
+            tertinggi = tinggiSiswa3;
+        }
+
+        document.writeln("Urutan tinggi badan siswa dari yang tertinggi ke terpendek: ");
+        if (tertinggi === tinggiSiswa1) {
+            document.writeln("- Siswa 1 (" + tinggiSiswa1 + " cm)");
+            if (tinggiSiswa2 > tinggiSiswa3) {
+                document.writeln("- Siswa 2 (" + tinggiSiswa2 + " cm)");
+                document.writeln("- Siswa 3 (" + tinggiSiswa3 + " cm)");
+            } else {
+                document.writeln("- Siswa 3 (" + tinggiSiswa3 + " cm)");
+                document.writeln("- Siswa 2 (" + tinggiSiswa2 + " cm)");
+            }
+        } else if (tertinggi === tinggiSiswa2) {
+            document.writeln("- Siswa 2 (" + tinggiSiswa2 + " cm)");
+            if (tinggiSiswa1 > tinggiSiswa3) {
+                document.writeln("- Siswa 1 (" + tinggiSiswa1 + " cm)");
+                document.writeln("- Siswa 3 (" + tinggiSiswa3 + " cm)");
+            } else {
+                document.writeln("- Siswa 3 (" + tinggiSiswa3 + " cm)");
+                document.writeln("- Siswa 1 (" + tinggiSiswa1 + " cm)");
+            }
+        } else {
+            document.writeln("- Siswa 3 (" + tinggiSiswa3 + " cm)");
+            if (tinggiSiswa1 > tinggiSiswa2) {
+                document.writeln("- Siswa 1 (" + tinggiSiswa1 + " cm)");
+                document.writeln("- Siswa 2 (" + tinggiSiswa2 + " cm)");
+            } else {
+                document.writeln("- Siswa 2 (" + tinggiSiswa2 + " cm)");
+                document.writeln("- Siswa 1 (" + tinggiSiswa1 + " cm)");
+            }
+        }
+</script>
+</body>
+</html> 

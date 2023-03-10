@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event onclick</title>
+</head>
+<body>
+    <script>
+        // function fun () {
+        //     document.writeln("ini kelas x tip 1")
+        // }
+
+        function mouse() {
+            alert("Jangan Iseng Dong");
+        }
+    </script>
+    <p>geser mouse</p>
+    <button onmouseover="mouse()">silahkan over</button>
+    <br>
+    <p>klik kanan mouse</p>
+    <button oncontextmenu="mouse()">Klik kanan</button>
+    <br>
+    <p>klik 2 kali</p>
+    <button ondblclick="mouse()">Klik 2 Kali</button>
+    <br>
+    <p>geser keluar dari tombol</p>
+    <button onmouseleave="mouse()">geser keluar</button>
+    <br>
+    <p>geser mouse ke sini</p>
+    <button onmouseenter="mouse()">geser mouse</button>
+    <br>
+    <p>geser mouse keluar</p>
+    <button onmouseout="mouse()">geser keluar</button>
+<!-- 
+    <p>tolong klik ini</p>
+    <button onclick="fun()">Click Me</button> -->
+</body>
+</html>

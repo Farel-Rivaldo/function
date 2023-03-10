@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // function penjumlahan() {
+        //     // mendeklerasikan angka
+        //     let angka1 = 400;
+        //     let angka2 = 20;
+        //     let hasil = angka1 + angka2;
+        //     return hasil;
+        // }
+        // document.writeln("hasil penjumlahan = " + penjumlahan());
+
+        function getfinalvalue(nilai) {
+            if(nilai > 89) {
+                return"A";
+            } else if(nilai > 79) {
+                return"B";
+            } else if(nilai > 69) {
+                return "C";
+            } else {
+                return "E";
+            }
+        }
+        const nilaiujian = getfinalvalue(90); 
+        document.writeln(nilaiujian);
+
+        // function tambah(a,b) {
+        //     hasilpenjumlahan = a + b;
+        //     document.writeln(hasilpenjumlahan);
+        //     return (hasilpenjumlahan);
+        // }
+        // tambah(10,20)
+    </script>
+</body>
+</html>
